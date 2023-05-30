@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ceaser Cipher</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <form name="ceaserForm" id="ceaserForm">
+            <label for="userMessage">Enter Message</label>
+            <textarea id="userMessage" rows="4" cols="50"></textarea>
+            <br />
+            <div class="row">
+                <label for="userKey" style="margin-right: 10px;">Key</label>
+                <input type="number" min="0" max="26" id="userKey" value="1" />
+                <button type="button" id="toggleButton" onclick="toggleEncodeDecode()">Encode/Decode</button>
+            </div>
+            <br />
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
