@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+:root {
+    --maincolor: #a82a2a;
+}
+
 /* Reset default margin and padding */
 body,
 form {
@@ -8,9 +12,8 @@ form {
 }
 
 /* Center the form vertically and horizontally */
-form {
+.container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -18,38 +21,72 @@ form {
     background-color: #f2f2f2;
 }
 
-/* Style the labels and inputs */
-label {
-    margin-top: 5px;
+/* Style the chat container */
+.chat-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* Style the chat header */
+.chat-header {
+    background-color: var(--maincolor);
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chat-header h1 {
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Style the chat body */
+.chat-body {
+    padding: 20px;
+}
+
+/* Style the message container */
+.message-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the individual messages */
+.message {
+    margin-bottom: 15px;
+}
+
+.message-content label {
     color: #333;
 }
 
-textarea,
-input[type="number"],
-button {
+.message-content textarea,
+.message-content input[type="number"],
+.message-content button {
     margin-top: 5px;
     font-family: "Poppins", sans-serif;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-button {
-    background-color: #333;
+.message-content button {
+    background-color: var(--maincolor);
     color: #fff;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-textarea,
-input[type="number"] {
-    padding: 5px;
+.message-content textarea,
+.message-content input[type="number"] {
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-}
-
-/* Style the form title */
-form > h1 {
-    color: #333;
-    text-align: center;
 }
 
 /* Add a container to center the form on the page */
@@ -68,6 +105,7 @@ form > h1 {
     align-items: center;
     margin-top: 5px;
 }
+
 #toggleButton {
-    margin-left: 20px;
+    margin-top: 10px;
 }

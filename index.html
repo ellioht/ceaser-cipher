@@ -4,21 +4,38 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ceaser Cipher</title>
+        <title>Caesar Cipher</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <form name="ceaserForm" id="ceaserForm">
-            <label for="userMessage">Enter Message</label>
-            <textarea id="userMessage" rows="4" cols="50"></textarea>
-            <br />
-            <div class="row">
-                <label for="userKey" style="margin-right: 10px;">Key</label>
-                <input type="number" min="0" max="26" id="userKey" value="1" />
-                <button type="button" id="toggleButton" onclick="toggleEncodeDecode()">Encode/Decode</button>
+        <div class="container">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h1>Caesar Cipher</h1>
+                </div>
+                <div class="chat-body">
+                    <div class="message-container">
+                        <div class="message">
+                            <div class="message-content">
+                                <label for="userMessage">Enter Message:</label>
+                                <textarea id="userMessage" rows="4" cols="50"></textarea>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="message-content">
+                                <label for="userKey">Key:</label>
+                                <input type="number" min="0" max="26" id="userKey" value="1" />
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="message-content">
+                                <button type="button" id="toggleButton" onclick="toggleEncodeDecode()">Encode/Decode</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <br />
-        </form>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
