@@ -4,27 +4,33 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Caesar Cipher</title>
+        <title>Rolling Caesar Cipher</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div class="container">
             <div class="chat-container">
                 <div class="chat-header">
-                    <h1>Caesar Cipher</h1>
+                    <h1>Rolling Caesar Cipher</h1>
                 </div>
                 <div class="chat-body">
                     <div class="message-container">
                         <div class="message">
                             <div class="message-content">
                                 <label for="userMessage">Enter Message:</label>
-                                <textarea id="userMessage" rows="4" cols="50"></textarea>
+                                <textarea id="userMessage" style="resize: none;" rows="4" cols="50"></textarea>
                             </div>
                         </div>
+                        <br />
                         <div class="message">
                             <div class="message-content">
-                                <label for="userKey">Key:</label>
-                                <input type="number" min="0" max="26" id="userKey" value="1" />
+                                <label for="userKey1">Key 1:</label>
+                                <input type="number" min="0" max="26" id="userKey1" value="1" />
+                            </div>
+                            <br />
+                            <div class="message-content">
+                                <label for="userKey2">Key 2:</label>
+                                <input type="number" min="0" max="26" id="userKey2" value="0" />
                             </div>
                         </div>
                         <div class="message">
