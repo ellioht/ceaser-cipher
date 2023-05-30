@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Reset default margin and padding */
+body,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the form vertically and horizontally */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Style the labels and inputs */
+label {
+    margin-top: 5px;
+    color: #333;
+}
+
+textarea,
+input[type="number"],
+button {
+    margin-top: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+textarea,
+input[type="number"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Style the form title */
+form > h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Add a container to center the form on the page */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+/* Place key label, key input, and button on the same row */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+#toggleButton {
+    margin-left: 20px;
+}
